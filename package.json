@@ -8,7 +8,7 @@
   "umd:main": "dist/unistore.umd.js",
   "typings": "index.d.ts",
   "scripts": {
-    "build": "npm-run-all --silent -p build:main build:integrations build:combined -s size docs",
+    "build": "npm-run-all --silent -p build:main build:integrations build:combined",
     "build:main": "microbundle",
     "build:integrations": "microbundle src/integrations/*.js -o x.js -f cjs",
     "build:combined": "microbundle src/combined/*.js -o full/x.js",
